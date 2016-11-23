@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5276EE751DE56F5C006EA8B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5276EE741DE56F5C006EA8B6 /* main.m */; };
+		5276EE781DE56F5C006EA8B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5276EE771DE56F5C006EA8B6 /* AppDelegate.m */; };
+		5276EE7B1DE56F5C006EA8B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5276EE7A1DE56F5C006EA8B6 /* ViewController.m */; };
+		5276EE7E1DE56F5C006EA8B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5276EE7C1DE56F5C006EA8B6 /* Main.storyboard */; };
+		5276EE801DE56F5C006EA8B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5276EE7F1DE56F5C006EA8B6 /* Assets.xcassets */; };
+		5276EE831DE56F5C006EA8B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5276EE811DE56F5C006EA8B6 /* LaunchScreen.storyboard */; };
+		5276EE8E1DE56F5C006EA8B6 /* JDLaunchAdDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5276EE8D1DE56F5C006EA8B6 /* JDLaunchAdDemoTests.m */; };
+		5276EE991DE56F5C006EA8B6 /* JDLaunchAdDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5276EE981DE56F5C006EA8B6 /* JDLaunchAdDemoUITests.m */; };
+		5276EEB81DE57007006EA8B6 /* UIImage+JDGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 5276EEAD1DE57007006EA8B6 /* UIImage+JDGIF.m */; };
+		5276EEB91DE57007006EA8B6 /* UIImageView+JDWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5276EEAF1DE57007006EA8B6 /* UIImageView+JDWebCache.m */; };
+		5276EEBA1DE57007006EA8B6 /* JDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5276EEB11DE57007006EA8B6 /* JDImageCache.m */; };
+		5276EEBB1DE57007006EA8B6 /* JDLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5276EEB31DE57007006EA8B6 /* JDLaunchAd.m */; };
+		5276EEBC1DE57007006EA8B6 /* JDSkipButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5276EEB51DE57007006EA8B6 /* JDSkipButton.m */; };
+		5276EEBD1DE57007006EA8B6 /* JDWebImageDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 5276EEB71DE57007006EA8B6 /* JDWebImageDownload.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5276EE8A1DE56F5C006EA8B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5276EE681DE56F5C006EA8B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5276EE6F1DE56F5C006EA8B6;
+			remoteInfo = JDLaunchAdDemo;
+		};
+		5276EE951DE56F5C006EA8B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5276EE681DE56F5C006EA8B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5276EE6F1DE56F5C006EA8B6;
+			remoteInfo = JDLaunchAdDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5276EE701DE56F5C006EA8B6 /* JDLaunchAdDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDLaunchAdDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5276EE741DE56F5C006EA8B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5276EE761DE56F5C006EA8B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5276EE771DE56F5C006EA8B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5276EE791DE56F5C006EA8B6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5276EE7A1DE56F5C006EA8B6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5276EE7D1DE56F5C006EA8B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5276EE7F1DE56F5C006EA8B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5276EE821DE56F5C006EA8B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5276EE841DE56F5C006EA8B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5276EE891DE56F5C006EA8B6 /* JDLaunchAdDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDLaunchAdDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5276EE8D1DE56F5C006EA8B6 /* JDLaunchAdDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLaunchAdDemoTests.m; sourceTree = "<group>"; };
+		5276EE8F1DE56F5C006EA8B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5276EE941DE56F5C006EA8B6 /* JDLaunchAdDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDLaunchAdDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5276EE981DE56F5C006EA8B6 /* JDLaunchAdDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLaunchAdDemoUITests.m; sourceTree = "<group>"; };
+		5276EE9A1DE56F5C006EA8B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5276EEAC1DE57007006EA8B6 /* UIImage+JDGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JDGIF.h"; sourceTree = "<group>"; };
+		5276EEAD1DE57007006EA8B6 /* UIImage+JDGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JDGIF.m"; sourceTree = "<group>"; };
+		5276EEAE1DE57007006EA8B6 /* UIImageView+JDWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JDWebCache.h"; sourceTree = "<group>"; };
+		5276EEAF1DE57007006EA8B6 /* UIImageView+JDWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JDWebCache.m"; sourceTree = "<group>"; };
+		5276EEB01DE57007006EA8B6 /* JDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDImageCache.h; sourceTree = "<group>"; };
+		5276EEB11DE57007006EA8B6 /* JDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDImageCache.m; sourceTree = "<group>"; };
+		5276EEB21DE57007006EA8B6 /* JDLaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDLaunchAd.h; sourceTree = "<group>"; };
+		5276EEB31DE57007006EA8B6 /* JDLaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDLaunchAd.m; sourceTree = "<group>"; };
+		5276EEB41DE57007006EA8B6 /* JDSkipButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSkipButton.h; sourceTree = "<group>"; };
+		5276EEB51DE57007006EA8B6 /* JDSkipButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSkipButton.m; sourceTree = "<group>"; };
+		5276EEB61DE57007006EA8B6 /* JDWebImageDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWebImageDownload.h; sourceTree = "<group>"; };
+		5276EEB71DE57007006EA8B6 /* JDWebImageDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWebImageDownload.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5276EE6D1DE56F5C006EA8B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5276EE861DE56F5C006EA8B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5276EE911DE56F5C006EA8B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5276EE671DE56F5C006EA8B6 = {
+			isa = PBXGroup;
+			children = (
+				5276EEAB1DE57007006EA8B6 /* JDLaunchAd */,
+				5276EE721DE56F5C006EA8B6 /* JDLaunchAdDemo */,
+				5276EE8C1DE56F5C006EA8B6 /* JDLaunchAdDemoTests */,
+				5276EE971DE56F5C006EA8B6 /* JDLaunchAdDemoUITests */,
+				5276EE711DE56F5C006EA8B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5276EE711DE56F5C006EA8B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5276EE701DE56F5C006EA8B6 /* JDLaunchAdDemo.app */,
+				5276EE891DE56F5C006EA8B6 /* JDLaunchAdDemoTests.xctest */,
+				5276EE941DE56F5C006EA8B6 /* JDLaunchAdDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5276EE721DE56F5C006EA8B6 /* JDLaunchAdDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5276EE761DE56F5C006EA8B6 /* AppDelegate.h */,
+				5276EE771DE56F5C006EA8B6 /* AppDelegate.m */,
+				5276EE791DE56F5C006EA8B6 /* ViewController.h */,
+				5276EE7A1DE56F5C006EA8B6 /* ViewController.m */,
+				5276EE7C1DE56F5C006EA8B6 /* Main.storyboard */,
+				5276EE7F1DE56F5C006EA8B6 /* Assets.xcassets */,
+				5276EE811DE56F5C006EA8B6 /* LaunchScreen.storyboard */,
+				5276EE841DE56F5C006EA8B6 /* Info.plist */,
+				5276EE731DE56F5C006EA8B6 /* Supporting Files */,
+			);
+			path = JDLaunchAdDemo;
+			sourceTree = "<group>";
+		};
+		5276EE731DE56F5C006EA8B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5276EE741DE56F5C006EA8B6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5276EE8C1DE56F5C006EA8B6 /* JDLaunchAdDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5276EE8D1DE56F5C006EA8B6 /* JDLaunchAdDemoTests.m */,
+				5276EE8F1DE56F5C006EA8B6 /* Info.plist */,
+			);
+			path = JDLaunchAdDemoTests;
+			sourceTree = "<group>";
+		};
+		5276EE971DE56F5C006EA8B6 /* JDLaunchAdDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5276EE981DE56F5C006EA8B6 /* JDLaunchAdDemoUITests.m */,
+				5276EE9A1DE56F5C006EA8B6 /* Info.plist */,
+			);
+			path = JDLaunchAdDemoUITests;
+			sourceTree = "<group>";
+		};
+		5276EEAB1DE57007006EA8B6 /* JDLaunchAd */ = {
+			isa = PBXGroup;
+			children = (
+				5276EEAC1DE57007006EA8B6 /* UIImage+JDGIF.h */,
+				5276EEAD1DE57007006EA8B6 /* UIImage+JDGIF.m */,
+				5276EEAE1DE57007006EA8B6 /* UIImageView+JDWebCache.h */,
+				5276EEAF1DE57007006EA8B6 /* UIImageView+JDWebCache.m */,
+				5276EEB01DE57007006EA8B6 /* JDImageCache.h */,
+				5276EEB11DE57007006EA8B6 /* JDImageCache.m */,
+				5276EEB21DE57007006EA8B6 /* JDLaunchAd.h */,
+				5276EEB31DE57007006EA8B6 /* JDLaunchAd.m */,
+				5276EEB41DE57007006EA8B6 /* JDSkipButton.h */,
+				5276EEB51DE57007006EA8B6 /* JDSkipButton.m */,
+				5276EEB61DE57007006EA8B6 /* JDWebImageDownload.h */,
+				5276EEB71DE57007006EA8B6 /* JDWebImageDownload.m */,
+			);
+			path = JDLaunchAd;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5276EE6F1DE56F5C006EA8B6 /* JDLaunchAdDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5276EE9D1DE56F5C006EA8B6 /* Build configuration list for PBXNativeTarget "JDLaunchAdDemo" */;
+			buildPhases = (
+				5276EE6C1DE56F5C006EA8B6 /* Sources */,
+				5276EE6D1DE56F5C006EA8B6 /* Frameworks */,
+				5276EE6E1DE56F5C006EA8B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JDLaunchAdDemo;
+			productName = JDLaunchAdDemo;
+			productReference = 5276EE701DE56F5C006EA8B6 /* JDLaunchAdDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5276EE881DE56F5C006EA8B6 /* JDLaunchAdDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5276EEA01DE56F5C006EA8B6 /* Build configuration list for PBXNativeTarget "JDLaunchAdDemoTests" */;
+			buildPhases = (
+				5276EE851DE56F5C006EA8B6 /* Sources */,
+				5276EE861DE56F5C006EA8B6 /* Frameworks */,
+				5276EE871DE56F5C006EA8B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5276EE8B1DE56F5C006EA8B6 /* PBXTargetDependency */,
+			);
+			name = JDLaunchAdDemoTests;
+			productName = JDLaunchAdDemoTests;
+			productReference = 5276EE891DE56F5C006EA8B6 /* JDLaunchAdDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5276EE931DE56F5C006EA8B6 /* JDLaunchAdDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5276EEA31DE56F5C006EA8B6 /* Build configuration list for PBXNativeTarget "JDLaunchAdDemoUITests" */;
+			buildPhases = (
+				5276EE901DE56F5C006EA8B6 /* Sources */,
+				5276EE911DE56F5C006EA8B6 /* Frameworks */,
+				5276EE921DE56F5C006EA8B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5276EE961DE56F5C006EA8B6 /* PBXTargetDependency */,
+			);
+			name = JDLaunchAdDemoUITests;
+			productName = JDLaunchAdDemoUITests;
+			productReference = 5276EE941DE56F5C006EA8B6 /* JDLaunchAdDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5276EE681DE56F5C006EA8B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = jdbr;
+				TargetAttributes = {
+					5276EE6F1DE56F5C006EA8B6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					5276EE881DE56F5C006EA8B6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5276EE6F1DE56F5C006EA8B6;
+					};
+					5276EE931DE56F5C006EA8B6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5276EE6F1DE56F5C006EA8B6;
+					};
+				};
+			};
+			buildConfigurationList = 5276EE6B1DE56F5C006EA8B6 /* Build configuration list for PBXProject "JDLaunchAdDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5276EE671DE56F5C006EA8B6;
+			productRefGroup = 5276EE711DE56F5C006EA8B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5276EE6F1DE56F5C006EA8B6 /* JDLaunchAdDemo */,
+				5276EE881DE56F5C006EA8B6 /* JDLaunchAdDemoTests */,
+				5276EE931DE56F5C006EA8B6 /* JDLaunchAdDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5276EE6E1DE56F5C006EA8B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5276EE831DE56F5C006EA8B6 /* LaunchScreen.storyboard in Resources */,
+				5276EE801DE56F5C006EA8B6 /* Assets.xcassets in Resources */,
+				5276EE7E1DE56F5C006EA8B6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5276EE871DE56F5C006EA8B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5276EE921DE56F5C006EA8B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5276EE6C1DE56F5C006EA8B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5276EEBD1DE57007006EA8B6 /* JDWebImageDownload.m in Sources */,
+				5276EEB81DE57007006EA8B6 /* UIImage+JDGIF.m in Sources */,
+				5276EE7B1DE56F5C006EA8B6 /* ViewController.m in Sources */,
+				5276EEBB1DE57007006EA8B6 /* JDLaunchAd.m in Sources */,
+				5276EEBA1DE57007006EA8B6 /* JDImageCache.m in Sources */,
+				5276EEBC1DE57007006EA8B6 /* JDSkipButton.m in Sources */,
+				5276EEB91DE57007006EA8B6 /* UIImageView+JDWebCache.m in Sources */,
+				5276EE781DE56F5C006EA8B6 /* AppDelegate.m in Sources */,
+				5276EE751DE56F5C006EA8B6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5276EE851DE56F5C006EA8B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5276EE8E1DE56F5C006EA8B6 /* JDLaunchAdDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5276EE901DE56F5C006EA8B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5276EE991DE56F5C006EA8B6 /* JDLaunchAdDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5276EE8B1DE56F5C006EA8B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5276EE6F1DE56F5C006EA8B6 /* JDLaunchAdDemo */;
+			targetProxy = 5276EE8A1DE56F5C006EA8B6 /* PBXContainerItemProxy */;
+		};
+		5276EE961DE56F5C006EA8B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5276EE6F1DE56F5C006EA8B6 /* JDLaunchAdDemo */;
+			targetProxy = 5276EE951DE56F5C006EA8B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5276EE7C1DE56F5C006EA8B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5276EE7D1DE56F5C006EA8B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5276EE811DE56F5C006EA8B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5276EE821DE56F5C006EA8B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5276EE9B1DE56F5C006EA8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5276EE9C1DE56F5C006EA8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5276EE9E1DE56F5C006EA8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JDLaunchAdDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jdbr.JDLaunchAdDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5276EE9F1DE56F5C006EA8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JDLaunchAdDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jdbr.JDLaunchAdDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5276EEA11DE56F5C006EA8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JDLaunchAdDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jdbr.JDLaunchAdDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDLaunchAdDemo.app/JDLaunchAdDemo";
+			};
+			name = Debug;
+		};
+		5276EEA21DE56F5C006EA8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JDLaunchAdDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jdbr.JDLaunchAdDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDLaunchAdDemo.app/JDLaunchAdDemo";
+			};
+			name = Release;
+		};
+		5276EEA41DE56F5C006EA8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JDLaunchAdDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jdbr.JDLaunchAdDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JDLaunchAdDemo;
+			};
+			name = Debug;
+		};
+		5276EEA51DE56F5C006EA8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JDLaunchAdDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jdbr.JDLaunchAdDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JDLaunchAdDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5276EE6B1DE56F5C006EA8B6 /* Build configuration list for PBXProject "JDLaunchAdDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5276EE9B1DE56F5C006EA8B6 /* Debug */,
+				5276EE9C1DE56F5C006EA8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5276EE9D1DE56F5C006EA8B6 /* Build configuration list for PBXNativeTarget "JDLaunchAdDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5276EE9E1DE56F5C006EA8B6 /* Debug */,
+				5276EE9F1DE56F5C006EA8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5276EEA01DE56F5C006EA8B6 /* Build configuration list for PBXNativeTarget "JDLaunchAdDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5276EEA11DE56F5C006EA8B6 /* Debug */,
+				5276EEA21DE56F5C006EA8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5276EEA31DE56F5C006EA8B6 /* Build configuration list for PBXNativeTarget "JDLaunchAdDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5276EEA41DE56F5C006EA8B6 /* Debug */,
+				5276EEA51DE56F5C006EA8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5276EE681DE56F5C006EA8B6 /* Project object */;
+}
