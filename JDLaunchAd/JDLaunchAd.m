@@ -337,7 +337,7 @@ static NSInteger const noDataDefaultDuration = 3;
         
         _customBtn = [[UIButton alloc]initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - width) / 2, ([UIScreen mainScreen].bounds.size.height*0.7), width, height)];
         
-        [_skipButton addTarget:self action:@selector(skipAction) forControlEvents:UIControlEventTouchUpInside];
+        [_skipButton addTarget:self action:@selector(tapAction:) forControlEvents:UIControlEventTouchUpInside];
         
     }
 
