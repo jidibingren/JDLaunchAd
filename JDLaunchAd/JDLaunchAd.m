@@ -355,7 +355,7 @@ static NSInteger const noDataDefaultDuration = 3;
     
     duration = duration/4.0;
     
-    if(duration>1.0) duration=1.0;
+    if(duration > 0.5) duration = 0.5;
     
     [UIView animateWithDuration:duration animations:^{
         
@@ -372,7 +372,7 @@ static NSInteger const noDataDefaultDuration = 3;
     
     duration = duration/4.0;
     
-    if(duration>1.0) duration=1.0;
+    if(duration > 0.5) duration = 0.5;
     
     [UIView animateWithDuration:duration animations:^{
         
@@ -471,7 +471,7 @@ static NSInteger const noDataDefaultDuration = 3;
 
 -(void)tapAction:(UITapGestureRecognizer *)tap
 {
-    if (_duration>0) {
+    if (_duration >= 0) {
         
         self.isClick = YES;
         
