@@ -312,6 +312,8 @@ static NSInteger const noDataDefaultDuration = 3;
         _skipButton.leftRightSpace = 5;
         
         _skipButton.topBottomSpace = 5;
+
+        _skipButton.alpha = 0.0;
         
         if(!_duration||_duration<=0) _duration = 5;//停留时间传nil或<=0,默认5s
         
@@ -340,6 +342,8 @@ static NSInteger const noDataDefaultDuration = 3;
         _customBtn.layer.cornerRadius = 2.5;
         
         _customBtn.layer.masksToBounds = YES;
+
+        _customBtn.alpha = 0.0;
         
         [_customBtn addTarget:self action:@selector(tapAction:) forControlEvents:UIControlEventTouchUpInside];
         
@@ -360,6 +364,10 @@ static NSInteger const noDataDefaultDuration = 3;
     [UIView animateWithDuration:duration animations:^{
         
         self.adImgView.alpha = 1;
+
+        self.skipButton.alpha = 1;
+
+        self.customBtn.alpha = 1;
         
     } completion:^(BOOL finished) {
         
@@ -438,6 +446,8 @@ static NSInteger const noDataDefaultDuration = 3;
                 dispatch_source_cancel(_skipButtonTimer);
                 
                 [self remove];
+                
+                return ;
                 
             }
             
