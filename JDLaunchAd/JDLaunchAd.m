@@ -230,16 +230,17 @@ static NSInteger const noDataDefaultDuration = 3;
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    if (_skipButtonTimer && _duration > 0 && self.isClick) {
-      
-        dispatch_resume(_skipButtonTimer);
-        
-        if(_setAdImage) {
+    
+    if(_setAdImage) {
             
             _setAdImage(self);
             
             _setAdImage = nil;
-        }
+    }
+    
+    if (_skipButtonTimer && _duration > 0 && self.isClick) {
+      
+        dispatch_resume(_skipButtonTimer);
         
     }
     
