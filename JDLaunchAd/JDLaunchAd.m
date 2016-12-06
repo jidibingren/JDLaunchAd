@@ -29,6 +29,8 @@ static NSInteger const noDataDefaultDuration = 3;
 
 @property(nonatomic,copy)dispatch_source_t skipButtonTimer;
 
+@property(nonatomic,copy)setAdImageBlock setAdImage;
+
 @property(nonatomic,copy)showFinishBlock showFinishBlock;
 
 @property(nonatomic,copy)clickBlock clickBlock;
@@ -57,15 +59,18 @@ static NSInteger const noDataDefaultDuration = 3;
 
     window.rootViewController = AdVC;
     
-    if(setAdImage) setAdImage(AdVC);
+    AdVC.setAdImage = setAdImage;
+
 }
 
 +(void)showInViewController:(UIViewController *)vc AdFrame:(CGRect)frame setAdImage:(setAdImageBlock)setAdImage showFinish:(showFinishBlock)showFinish
 {
     JDLaunchAd *AdVC = [[JDLaunchAd alloc] initWithFrame:frame showFinish:showFinish];
     
+    AdVC.setAdImage = setAdImage;
+    
     [vc presentViewController:AdVC animated:NO completion:^{
-        if(setAdImage) setAdImage(AdVC);
+//        if(setAdImage) setAdImage(AdVC);
     }];
     
 }
@@ -225,9 +230,16 @@ static NSInteger const noDataDefaultDuration = 3;
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    if (_skipButtonTimer&&_duration>0&&self.isClick) {
+    if (_skipButtonTimer && _duration > 0 && self.isClick) {
       
         dispatch_resume(_skipButtonTimer);
+        
+        if(_setAdImage) {
+            
+            _setAdImage(self);
+            
+            _setAdImage = nil;
+        }
         
     }
     
@@ -236,7 +248,7 @@ static NSInteger const noDataDefaultDuration = 3;
 
 -(void)viewWillDisappear:(BOOL)animated
 {
-    if (_skipButtonTimer&&_duration>0&&self.isClick) {
+    if (_skipButtonTimer && _duration > 0 && self.isClick) {
         
         dispatch_suspend(_skipButtonTimer);
         
@@ -284,7 +296,7 @@ static NSInteger const noDataDefaultDuration = 3;
 
 -(UIImageView *)adImgView
 {
-    if (_adImgView==nil) {
+    if (_adImgView == nil) {
         
         _adImgView = [[UIImageView alloc] initWithFrame:_adFrame];
         
@@ -376,7 +388,7 @@ static NSInteger const noDataDefaultDuration = 3;
 
 -(void)changeImageByUrl:(NSString *)url
 {
-    CGFloat duration = _duration;
+    CGFloat duration = _perImageShowTime;
     
     duration = duration/4.0;
     
@@ -407,7 +419,7 @@ static NSInteger const noDataDefaultDuration = 3;
         
         dispatch_async(dispatch_get_main_queue(), ^{
     
-            if (duration==0) {
+            if ( duration == 0 ) {
                 
                 dispatch_source_cancel(_noDataTimer);
                 
@@ -545,7 +557,7 @@ static NSInteger const noDataDefaultDuration = 3;
 
 -(void)setNoDataDuration:(NSInteger)noDataDuration
 {
-    if(noDataDuration<1) noDataDuration=1;
+    if ( noDataDuration < 1 ) noDataDuration = 1;
 
     _noDataDuration = noDataDuration;
     
