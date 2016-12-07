@@ -49,6 +49,8 @@ typedef void(^showFinishBlock)();
 
 @property (nonatomic, strong) UIImage *placeholderImage;
 
+@property (nonatomic, strong) UITapGestureRecognizer* adImageViewTap;
+
 /**
  *  显示启动广告
  *

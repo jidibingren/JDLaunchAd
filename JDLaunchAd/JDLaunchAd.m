@@ -13,7 +13,7 @@
 /**
  *  未检测到广告数据,启动页默认停留时间
  */
-static NSInteger const noDataDefaultDuration = 3;
+static NSInteger const noDataDefaultDuration = 13;
 
 @interface JDLaunchAd()
 
@@ -223,6 +223,10 @@ static NSInteger const noDataDefaultDuration = 3;
         
         [self startNoDataDispath_tiemr];
         
+        _adImageViewTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
+        
+        [_adImageViewTap setEnabled:YES];
+        
     }
     
     return self;
@@ -305,9 +309,7 @@ static NSInteger const noDataDefaultDuration = 3;
         
         _adImgView.alpha = 0.2;
         
-        UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
-        
-        [_adImgView addGestureRecognizer:tap];
+        [_adImgView addGestureRecognizer:_adImageViewTap];
         
     }
     

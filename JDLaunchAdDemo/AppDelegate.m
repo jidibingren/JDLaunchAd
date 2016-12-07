@@ -59,7 +59,7 @@
              */
             launchAd.isShowCustomBtn = YES;
             [launchAd.customBtn setTitle:@"立即进入" forState:UIControlStateNormal];
-            
+            [launchAd.adImageViewTap setEnabled:NO];
             //定义一个weakLaunchAd
             __weak __typeof(launchAd) weakLaunchAd = launchAd;
             [launchAd setImageUrls:@[ImgUrlString1,ImgUrlString2] duration:duration skipType:SkipTypeTimeText options:JDWebImageDefault completed:^(UIImage *image, NSURL *url) {

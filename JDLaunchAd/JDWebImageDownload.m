@@ -68,7 +68,7 @@
 {
     if(url==nil) return;
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         
         UIImage *image = [self jd_downLoadImageAndCacheWithURL:url];
         
@@ -85,7 +85,7 @@
 {
     if(url==nil) return;
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         
         UIImage *image = [self jd_downLoadImageWithURL:url];
         
